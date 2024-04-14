@@ -20,7 +20,7 @@ print(result)
 
 print("Here is a floor version (crop decimal):", 20 // 3) #6
 
-result = 5**2 #raising a number to a power (5^)
+result = 5**2 #raising a number to a power (5^2)
 print(result)
 
 #You can use round instead. 
