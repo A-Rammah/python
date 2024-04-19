@@ -5,7 +5,7 @@
 
 #You must first understand booleans. 
 #They are either True or False (these are both keywords)
-#
+
 happy = True
 print(happy)
 
@@ -25,18 +25,31 @@ print("me == you?", me == you)
 my_grades = [100, 100, 100]
 your_grades = [100, 100, 1]
 print("Same grade?", my_grades == your_grades) #false
+print(id(my_grades))
+print(id(your_grades))
+#   Watch out and remember alias vs copying a list and deepcopying it!!!!!
+
+
+#   HERE we are manipulating the "VALUE" of the your_grades list variable.
+#   What's on the left of the assignment operator
 
 your_grades = [100, 100, 100]
 print("Same grade?", my_grades == your_grades) #true 
-
+print(id(my_grades))
+print(id(your_grades))
 #in some languages, == compares by memory address to see if same object
 #this is done in python using is.
 #This is known as an identity comparison
 print("are grades the same object?", my_grades is your_grades) #false
 
+
+#   HERE we are manipulating the "VARIABLE ITSELF NOT IT'S VALUE" of the your_grades list variable.
+#   What's on the RIGHT of the assignment operator
+
 my_grades = your_grades
 print("are grades the same object?", my_grades is your_grades) #true
-
+print(id(my_grades))
+print(id(your_grades))
 #You can also do order testing for strings
 #Read ABC comes before BCD?
 print("A before B?", "ABC" < "BCD")
@@ -76,10 +89,10 @@ if age > 100:
 
 ########## if elif else ##########
 
-if age > 100:
-    print("You're old")
-elif age > 120:
+if age > 120:
     print("How are you even alive?")
+elif age > 100:
+    print("You're old")
 else:
     print("You may have some years left in you")
 
@@ -131,10 +144,13 @@ if car_nice and on_sale:
 temp_outside = 50
 pool_heated = False
 
+#   nafy el nafy esbat!!!!!!
+range()
 if temp_outside < 60 and not pool_heated:
     print("Don't go swimming!")
 
 #this can be confusing, so it might be best to read it as english
 #however, logically... pool_heated is false so not pool_heated is true.
 #therefore, both sides are true. 
+#   
 
