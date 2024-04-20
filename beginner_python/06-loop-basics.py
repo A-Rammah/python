@@ -26,9 +26,9 @@ print("Line")
 for language in languages:
     print(language, end =" ")
 print()
-#can end with newline tfor future prints
+#can end with newline for future prints
 
-#You could alternatively use end="\t" or end="" or whatever you want.
+#You could alternatively use end=" " or end="" or whatever you want.
 
 #You might be confused why we have to put end and not just:
 print("DOEN'T AFFECT END", " ")
@@ -52,7 +52,7 @@ print()
 #for range(10), we get 0-9:
 
 for i in range(10):
-    print(i, end=" ")
+    print(i, end="-")
 print() 
 
 #Important: the value to end at is never part of the range. 
@@ -65,6 +65,7 @@ print()
 #We can count 1-10 instead of 0-9 if desired:
 for i in range (1, 11):
     print(i, end=" ")
+    
 print()
 
 #We can start anywhere and end anywhere
